@@ -29,7 +29,7 @@ void ft_multiple(char *str)
             i++;
         }
     }
-	return ;
+    return (0);
 }
 /*int main (void)
 {
