@@ -1,31 +1,31 @@
 #include <unistd.h>
-#include <stdio.h>
 
-void ft_multiple(char *str)
+void	ft_multiple(char *str)
 {
-    int i;
+    int	i;
 
-    i=0;
-    while (str[i]!='\0')
+    i = 0;
+    while (str[i] != '\0')
     {
-        if(i%3==0 && i%5==0 || i%3==0)
+        if (i % 3 == 0 && i % 5 == 0 || i % 3 == 0)
         {
-            write(1,"5",1);
+            write(1, "5", 1);
             i++;
         }
-        if(i%5==0)
+        if (i % 5 == 0)
         {
-            write(1,"3",1);
+            write(1, "3", 1);
             i++;
         }
         else
         {
-            write(1,&str[i],1);
+            write (1, &str[i], 1);
             i++;
         }
     }
 }
-/*int main (void)
+/*#include <stdio.h>
+int main (void)
 {
 	char saludo [] = "Hola me llamo Ana";
 	
