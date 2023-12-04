@@ -5,7 +5,7 @@ void	ft_multiple(char *str)
     int	i;
 
     i = 0;
-    while (str[i] != '\0')
+    while (str[i])
     {
         if (i % 3 == 0 && i % 5 == 0 || i % 3 == 0)
         {
